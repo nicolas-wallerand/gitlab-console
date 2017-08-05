@@ -1,0 +1,20 @@
+{
+  "name": "nicolas-wallerand/gitlab-console",
+  "description": "gitlab console ",
+  "minimum-stability" : "dev",
+  "require": {
+    "symfony/var-dumper": "^3.2",
+    "nicolas-wallerand/gitlab-api-rest-client": "dev-master",
+    "symfony/console": "^3.3"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "ApiClientGitlab\\Commands\\": "src/commands/"
+    }
+  }
+}
